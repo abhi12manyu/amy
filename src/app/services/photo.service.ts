@@ -20,7 +20,6 @@ export class PhotoService {
     // Fetch the photo, read as a blob, then convert to base64 format
     const response = await fetch(photo.webPath!);
     const blob = await response.blob();
-  
     return await this.convertBlobToBase64(blob) as string;
   }
   
@@ -79,8 +78,9 @@ export class PhotoService {
   public async loadSaved() {
     // Retrieve cached photo array data
     const photoList = await Preferences.get({ key: this.PHOTO_STORAGE });
-  //  this.photos = JSON.parse(photoList.value) || [];
+    this.photos = JSON.parse("") || [];
    // this.photos = JSON.parse(photoList.value);
+  
   
     // more to come...
     // Display the photo by reading into base64 format
