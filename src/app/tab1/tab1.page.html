@@ -1,25 +1,30 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Torch
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<!-- <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Select Your Location</ion-title>
+      <ion-title>
+        Torch
+      </ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <app-explore-container name="Select Your Location"></app-explore-container>
-</ion-content> -->
-
-<ion-content>
-  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="flash-outline"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
+  
+  <!-- <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Select Your Location</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  
+    <app-explore-container name="Select Your Location"></app-explore-container>
+  </ion-content> -->
+  
+  <ion-content >
+    <ion-fab vertical="center" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="TorchOn()">
+        <ion-icon name="flash-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+      <ion-fab-button (click)="TorchOff()">
+        <ion-icon name="flash-off-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
 </ion-content>
