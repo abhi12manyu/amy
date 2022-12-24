@@ -76,8 +76,7 @@ export class PhotoService {
     };
   }
 }
-  public async addNewToGallery() {
-    // Take a photo
+  public async addImageToGallery() {
     const capturedPhoto = await Camera.getPhoto({
       resultType: CameraResultType.Uri,
       source: CameraSource.Camera,
@@ -90,7 +89,6 @@ export class PhotoService {
     });
 
     const savedImageFile = await this.savePicture(capturedPhoto);
-    this.photos.unshift(savedImageFile);
 
     this.photos.unshift({
       filepath: "soon...",
