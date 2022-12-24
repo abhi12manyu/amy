@@ -10,8 +10,8 @@ export class TabsPage {
 
   constructor(public photoService: PhotoService) {}
 
-  addPhotoToGallery() {
-    this.photoService.addNewToGallery();
+  addImageToGallery() {
+    this.photoService.addImageToGallery();
   }
 
   async ngOnInit() {
