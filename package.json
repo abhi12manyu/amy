@@ -21,6 +21,7 @@
     "@angular/router": "^15.0.0",
     "@awesome-cordova-plugins/flashlight": "^6.2.0",
     "@awesome-cordova-plugins/splash-screen": "^6.2.0",
+    "@capacitor/android": "^4.6.1",
     "@capacitor/app": "4.1.1",
     "@capacitor/camera": "^4.1.4",
     "@capacitor/core": "4.6.1",
